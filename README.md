@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### AnyCable Setup
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* brew install anycable-go
+* add gems 'anycable-rails', 'redis'
+* set up Procfile
+* set `config.action_cable.url = "ws://localhost:3334/cable"` in `config/environments/development.rb`
+* set adapter to `anycable` in `config/cable.yml`
